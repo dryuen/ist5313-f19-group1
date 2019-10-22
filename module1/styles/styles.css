@@ -25,6 +25,7 @@
 	border: double #FABC7F;
 	border-radius: 10px;
 	margin: 5px;
+	background: #BF9869;
 	width: 15%;
 	padding: 7px;
 	background: white;
@@ -38,6 +39,8 @@
 	width: 50%;
 	font-family: Trebuchet MS;
 	font-size: 14px;
+	background: #F0C898;
+	width: 45%;
 }
 
 .aside-content
@@ -49,6 +52,7 @@
 .nav a
 {
 	font-size: 12px;
+<<<<<<< HEAD
 	text-decoration: none;
 	font-family: Trebuchet MS;
 	color: #5e3d15;	
