@@ -7,33 +7,74 @@
 .column
 {
 	float: left;
-	padding: 10px;
 }
 
+.logo
+{
+	width: 20%;
+	background: red;
+}
+
+.heading
+{
+	width: 70%;
+	text-align: center;
+}
 .nav
 {
-	background: #00ff00;
+	border: double #FABC7F;
+	border-radius: 10px;
+	margin: 5px;
 	width: 15%;
+	padding: 7px;
+	background: white;
 }
 
 .content
 {
-	background: #ffff00;
-	width: 45%;
+	/*border: double #FABC7F;
+	border-radius: 10px;*/
+	margin: 10px;
+	width: 50%;
+	font-family: Trebuchet MS;
+	font-size: 14px;
 }
 
 .aside-content
 {
-	background: #00ffff;
-	width: 30%;
+	width: 25%;
+	text-align: center;
+}
+
+.nav a
+{
+	font-size: 12px;
+	text-decoration: none;
+	font-family: Trebuchet MS;
+	color: #5e3d15;	
+	font-weight: bold;
+}
+.nav a:visited
+{
+	font-size: 12px;
+	text-decoration: none;
+	font-family: Trebuchet MS;
+	color: #5e3d15;	
+	font-weight: bold;
+	
+}
+
+@font-face{
+	font-family: "Calligraphy";
+	src: url("font.tff");
 }
 
 body
 {
-	margin: 0px;
-	padding: 0px;
-	font-size: 12px;
-	font-family: Arial;
+	background-image: url( "../images/coffee-background.jpg" );
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	
 }
 
 #main-info
