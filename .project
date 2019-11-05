@@ -8,4 +8,11 @@
 	</buildSpec>
 	<natures>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>module1/images/latteart.jpg</name>
+			<type>1</type>
+			<location>/Users/patye.c./git/ist5313-f19/module1/images/latteart.jpg</location>
+		</link>
+	</linkedResources>
 </projectDescription>
