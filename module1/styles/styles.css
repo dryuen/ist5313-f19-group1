@@ -12,13 +12,14 @@
 .logo
 {
 	width: 20%;
-	background: red;
+	background: none;
 }
 
 .heading
 {
 	width: 70%;
 	text-align: center;
+	color: #5e3d15;
 }
 .nav
 {
