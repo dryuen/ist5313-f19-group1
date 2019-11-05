@@ -1,9 +1,86 @@
+{
+	display: table;
+	clear: both;
+}
+
+.column
+{
+	float: left;
+}
+
+.logo
+{
+	width: 20%;
+	background: none;
+}
+
+.heading
+{
+	width: 70%;
+	text-align: center;
+	font-family: Trebuchet MS;
+	color: #330000;
+}
+.nav
+{
+	border: double #FABC7F;
+	border-radius: 10px;
+	margin: 5px;
+	background: #BF9869;
+	width: 15%;
+	padding: 7px;
+	background: white;
+}
+
+.content
+{
+	/*border: double #FABC7F;
+	border-radius: 10px;*/
+	margin: 10px;
+	width: 50%;
+	font-family: Trebuchet MS;
+	font-size: 14px;
+	background: #F0C898;
+	width: 45%;
+}
+
+.aside-content
+{
+	width: 25%;
+	text-align: center;
+}
+
+.nav a
+{
+	font-size: 12px;
+<<<<<<< HEAD
+	text-decoration: none;
+	font-family: Trebuchet MS;
+	color: #5e3d15;	
+	font-weight: bold;
+}
+.nav a:visited
+{
+	font-size: 12px;
+	text-decoration: none;
+	font-family: Trebuchet MS;
+	color: #5e3d15;	
+	font-weight: bold;
+	
+	
+}
+
+@font-face{
+	font-family: "Calligraphy";
+	src: url("font.tff");
+}
+
 body
 {
-	margin: 0px;
-	padding: 0px;
-	font-size: 12px;
-	font-family: Arial;
+	background-image: url( "../images/coffee-background.jpg" );
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	
 }
 
 #main-info
@@ -73,4 +150,3 @@ body
 audio
 {
 	width: 230px;
-}

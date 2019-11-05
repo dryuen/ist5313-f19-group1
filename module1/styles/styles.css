@@ -12,13 +12,15 @@
 .logo
 {
 	width: 20%;
-	background: red;
+	background: none;
 }
 
 .heading
 {
 	width: 70%;
 	text-align: center;
+	font-family: Trebuchet MS;
+	color: #330000;
 }
 .nav
 {
