@@ -79,12 +79,47 @@ function visitTopic2()
 	checkAllVisited();
 }
 
+function visitTopic3()
+{
+	sessionStorage.setItem( "topic1_3", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic4()
+{
+	sessionStorage.setItem( "topic1_4", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic5()
+{
+	sessionStorage.setItem( "topic1_5", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic6()
+{
+	sessionStorage.setItem( "topic1_6", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic7()
+{
+	sessionStorage.setItem( "topic1_7", "visited" );
+	checkAllVisited();
+}
+
 function checkAllVisited()
 {
 	var t1 = sessionStorage.getItem( "topic1_1" );
 	var t2 = sessionStorage.getItem( "topic1_2" );
+	var t3 = sessionStorage.getItem( "topic1_3" );
+	var t4 = sessionStorage.getItem( "topic1_4" );
+	var t5 = sessionStorage.getItem( "topic1_5" );
+	var t6 = sessionStorage.getItem( "topic1_6" );
+	var t7 = sessionStorage.getItem( "topic1_7" );
 	
-	if( t1 == "visited" && t2 == "visited" )
+	if( t1 == "visited" && t2 == "visited" t3 == "visited" && t4 == "visited" t5 == "visited" && t6 == "visited" t7 == "visited" )
 	{
 		document.getElementById( "content-frame" ). contentWindow.documentElementById( "quiz-link" ).style.display = "inline";
 	}
