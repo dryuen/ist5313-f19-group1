@@ -24,6 +24,8 @@ function startCourse()
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
     			sessionStorage.setItem( "course_started", "1" );
+    			sessionStorage.setItem( "topic1_1", "unvisited" );
+    			sessionStorage.setItem( "topic1_2", "unvisited" );
     			
 			// set the values you want to persist throughout the website here
         }
@@ -62,6 +64,29 @@ function initializeSCORM()
 		// retrieve the LMS values (like user name) here and 
 		// integrate them into your course
 		alert( "Welcome, " + oScorm.get( "cmi.core.student_name" ) + "!" );
+	}
+}
+
+function visitTopic1()
+{
+	sessionStorage.setItem( "topic1_1", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+	sessionStorage.setItem( "topic1_2", "visited" );
+	checkAllVisited();
+}
+
+function checkAllVisited()
+{
+	var t1 = sessionStorage.getItem( "topic1_1" );
+	var t2 = sessionStorage.getItem( "topic1_2" );
+	
+	if( t1 == "visited" && t2 == "visited" )
+	{
+		document.getElementById( "content-frame" ). contentWindow.documentElementById( "quiz-link" ).style.display = "inline";
 	}
 }
 
