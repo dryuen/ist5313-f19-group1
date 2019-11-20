@@ -127,9 +127,9 @@ function checkAllVisited()
 	var t6 = sessionStorage.getItem( "topic1_6" );
 	var t7 = sessionStorage.getItem( "topic1_7" );
 	
-	alert( t1 + ", " + t2 + "," + t3 + ", " + t4 + ", " + t5 + "," + t6 + ", " + t7 );
 	if( t1 == "visited" && t2 == "visited" && t3 == "visited" && t4 == "visited" && t5 == "visited" && t6 == "visited" && t7 == "visited" )
-	{
+	{alert( t1 + ", " + t2 + "," + t3 + ", " + t4 + ", " + t5 + "," + t6 + ", " + t7 );
+	
 		document.getElementById( "content-frame" ). contentWindow.documentElementById( "quiz-link" ).style.display = "inline";
 	}
 }
