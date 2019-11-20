@@ -24,6 +24,15 @@ function startCourse()
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
     			sessionStorage.setItem( "course_started", "1" );
+    			sessionStorage.setItem( "topic1_1", "unvisited" );
+    			sessionStorage.setItem( "topic1_2", "unvisited" );
+				sessionStorage.setItem( "topic1_3", "unvisited" );
+				sessionStorage.setItem( "topic1_4", "unvisited" );
+				sessionStorage.setItem( "topic1_5", "unvisited" );
+				sessionStorage.setItem( "topic1_6", "unvisited" );
+				sessionStorage.setItem( "topic1_7", "unvisited" );
+				sessionStorage.setItem( "topic1_8", "unvisited" );
+				sessionStorage.setItem( "topic1_9", "unvisited" );
     			
 			// set the values you want to persist throughout the website here
         }
@@ -62,6 +71,64 @@ function initializeSCORM()
 		// retrieve the LMS values (like user name) here and 
 		// integrate them into your course
 		alert( "Welcome, " + oScorm.get( "cmi.core.student_name" ) + "!" );
+	}
+}
+
+function visitTopic1()
+{
+	sessionStorage.setItem( "topic1_1", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+	sessionStorage.setItem( "topic1_2", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic3()
+{
+	sessionStorage.setItem( "topic1_3", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic4()
+{
+	sessionStorage.setItem( "topic1_4", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic5()
+{
+	sessionStorage.setItem( "topic1_5", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic6()
+{
+	sessionStorage.setItem( "topic1_6", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic7()
+{
+	sessionStorage.setItem( "topic1_7", "visited" );
+	checkAllVisited();
+}
+
+function checkAllVisited()
+{
+	var t1 = sessionStorage.getItem( "topic1_1" );
+	var t2 = sessionStorage.getItem( "topic1_2" );
+	var t3 = sessionStorage.getItem( "topic1_3" );
+	var t4 = sessionStorage.getItem( "topic1_4" );
+	var t5 = sessionStorage.getItem( "topic1_5" );
+	var t6 = sessionStorage.getItem( "topic1_6" );
+	var t7 = sessionStorage.getItem( "topic1_7" );
+	
+	if( t1 == "visited" && t2 == "visited" t3 == "visited" && t4 == "visited" t5 == "visited" && t6 == "visited" t7 == "visited" )
+	{
+		document.getElementById( "content-frame" ). contentWindow.documentElementById( "quiz-link" ).style.display = "inline";
 	}
 }
 

@@ -4,6 +4,8 @@
 		<meta charset="utf-8"/>
 		<title>Coffee 101</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		</head>
+	<body onload="javascript:parent.visitTopic8()">
 		
 		<div id="header">
 			<div class="column logo">
@@ -13,6 +15,8 @@
 				<h1>Module 2: Capuccino</h1>
 			</div>
 		</div>
+		
+		
 		
 		<div id="main">
 			<div class="column nav">
@@ -25,13 +29,63 @@
 			<a href="topic-6.html">Fun Facts</a> <br><br>
 			<a href="topic-7.html">Places to Find in SA</a> <br><br>
 			<a href="topic-8.html">Quiz</a> <br><br>
+			<a href="topic-9.html">Certificate</a> <br><br>
 			</div>
 		</div>
 		
 		<div class="column content">
 		<h1>Quiz</h1>
 		<p>
-		Click here to get your completion certificate!
+		
+		<form id="quiz1" name="quiz1" action="javascript:processQuiz()">
+			<label for="question1">1. Where does the term cappuccino come from?</label>
+			<br/>
+			<input type="radio" id="question1" name="question1" value="0"/>
+			Coffee and milk <br/>
+			<input type="radio" id="question1" name="question1" value="1"/>
+			The hoods of Italian Capuchin friars <br/>
+			<input type="radio" id="question1" name="question1" value="2"/>
+			 Franciscan orders of monks <br/>
+			<br>
+		
+			<label for="question2">2. When did the cappuccino gain its popularity?</label>
+			<br/>
+			<input type="radio" id="question2" name="question2" value="0"/>
+			In the mid 1800’s <br/>
+			<input type="radio" id="question2" name="question2" value="1"/>
+			In the 16th century <br/>
+			<input type="radio" id="question2" name="question2" value="2"/>
+			After World War II <br/>
+			<br>
+			
+			<label for="question3">3. What is one thing you can use to supplement for sugar?</label>
+			<br/>
+			<input type="radio" id="question3" name="question3" value="0"/>
+			Stevia <br/>
+			<input type="radio" id="question3" name="question3" value="1"/>
+			Soy Milk <br/>
+			<input type="radio" id="question3" name="question3" value="2"/>
+			Decaf <br/>
+			<br>
+			
+			<label for="question4">4. Which of the following is NOT an ingredient for making a Cappuccino?</label>
+			<br/>
+			<input type="radio" id="question4" name="question4" value="0"/>
+			Milk <br/>
+			<input type="radio" id="question4" name="question4" value="1"/>
+			Whipped Cream <br/>
+			<input type="radio" id="question4" name="question4" value="2"/>
+			Espresso <br/>
+			<br>
+			
+			<label for="question5">5. When is National Cappuccino Day?</label>
+			<br/>
+			<input type="radio" id="question5" name="question5" value="0"/>
+			October 7 <br/>
+			<input type="radio" id="question5" name="question5" value="1"/>
+			November 8 <br/>
+			<input type="radio" id="question5" name="question5" value="2"/>
+			September 29 <br/>
 		<p></div>
 		
 		
