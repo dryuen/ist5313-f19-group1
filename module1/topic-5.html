@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Coffee 101</title>
+		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/drag-and-drop.js"></script>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		</head>
 	<body onload="javascript:parent.visitTopic5()">
@@ -13,13 +15,14 @@
 			<div class="column heading">
 				<h1>Module 1: Latte</h1>
 			</div>
+			
+			
 		</div>
 		
 		
 	
 		<div id="main">
 			<div class="column nav">
-			<a href="index.html">Homepage</a> <br><br>
 			<a href="topic-1.html">Introduction</a> <br><br>
 			<a href="topic-2.html">History</a> <br><br>
 			<a href="topic-3.html">How It Has Evolved</a> <br><br>
@@ -27,7 +30,7 @@
 			<a href="topic-5.html">Altering to Dietary Needs</a> <br><br>
 			<a href="topic-6.html">Fun Facts</a> <br><br>
 			<a href="topic-7.html">Places to Find in SA</a> <br><br>
-			<a href="topic-8.html">Quiz</a> <br><br>
+			<a href="topic-8.html" id="quiz-link">Quiz</a> <br><br>
 			<a href="topic-9.html" id="certificate-link">Certificate</a> <br><br>
 			</div>
 		</div>
@@ -36,10 +39,42 @@
 		<h3> Drag and Drop </h3>
 			<p> Match the ingredient to the substitute  </p>
 			
-			
-	
-       
-         			
+         	  <section>
+         		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+				
+				<div class="ddcolumn">
+						<h3>Draggers</h3>
+					 	<div id="d1" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Milk</p></div><br/>  
+				     	<div id="d2" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Sugar</p></div><br/>                        
+				 		<div id="d3" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Caffeine</p></div><br/>  
+				</div>
+				
+				    
+				<div class="ddcolumn">
+						<h3>Dragger Bays</h3>
+				     	<div id="db1" value="0" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Agave</p></div><br/>                        
+				 		<div id="db2" value="1" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Decaf</p></div><br/>  
+					 	<div id="db3" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Soy </p></div><br/> 
+				</div>
+				<p id="response">&nbsp;</p>
+				<input type="submit" name="button" value="Submit Your Answer"/><br/>
+				</form>
+            </section>		
 		</div>
 		
 		<div class="column aside-content">
