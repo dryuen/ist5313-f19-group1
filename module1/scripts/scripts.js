@@ -131,7 +131,7 @@ function checkAllVisited()
 	{
 		//alert( t1 + ", " + t2 + "," + t3 + ", " + t4 + ", " + t5 + "," + t6 + ", " + t7 );
 	
-		document.getElementById( "content-frame" ).contentWindow.document.ElementById( "quiz-link" ).style.display = "inline";
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 	}
 }
 
