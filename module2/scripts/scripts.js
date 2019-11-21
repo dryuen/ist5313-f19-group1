@@ -119,8 +119,13 @@ function checkAllVisited()
 	
 	if( t1 == "visited" && t2 == "visited" && t3 == "visited" && t4 == "visited" && t5 == "visited" && t6 == "visited" && t7 == "visited" )
 	{
-		document.getElementById( "content-frame" ). contentWindow.documentElementById( "quiz-link" ).style.display = "inline";
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 	}
+	
+	
+	
+	
+	
 }
 
 // This function reports the score from the assessment to the LMS
