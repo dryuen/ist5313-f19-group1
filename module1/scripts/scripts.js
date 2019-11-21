@@ -118,6 +118,7 @@ function visitTopic7()
 
 function checkAllVisited()
 {
+
 	var t1 = sessionStorage.getItem( "topic1_1" );
 	var t2 = sessionStorage.getItem( "topic1_2" );
 	var t3 = sessionStorage.getItem( "topic1_3" );
@@ -128,7 +129,9 @@ function checkAllVisited()
 	
 	if( t1 == "visited" && t2 == "visited" && t3 == "visited" && t4 == "visited" && t5 == "visited" && t6 == "visited" && t7 == "visited" )
 	{
-		document.getElementById( "content-frame" ). contentWindow.documentElementById( "quiz-link" ).style.display = "inline";
+		//alert( t1 + ", " + t2 + "," + t3 + ", " + t4 + ", " + t5 + "," + t6 + ", " + t7 );
+	
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 	}
 }
 
