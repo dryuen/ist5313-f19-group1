@@ -151,3 +151,15 @@ body
 audio
 {
 	width: 230px;
+}
+
+#quiz-link
+{
+	display: none;
+}
+
+#certificate-link
+{
+	display: none;
+}
+
