@@ -132,7 +132,21 @@ function checkAllVisited()
 // This should only be called when the user submits the answers to the quiz
 function reportScores( score )
 {	
+	oScorm.set("cmi.core.score.raw", score);
+	oScorm.set("cmi.core.score.min", 80);
+	oScorm.set("cmi.core.score.max", 100);
+	oScorm.set("cmi.core.lesson_status", "passed");
+	
 	oScorm.save();
+}
+
+function processQuiz()
+{
+	var score = 0;
+	
+	//calculate the final score from the quiz
+	
+	parent.reportScores( score);
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
