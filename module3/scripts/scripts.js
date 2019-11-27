@@ -128,20 +128,15 @@ function checkAllVisited()
 function reportScores( score )
 {	
 	oScorm.set("cmi.core.score.raw", score);
-	oScorm.set("cmi.core.score.min", 80);
+	oScorm.set("cmi.core.score.min", 0);
 	oScorm.set("cmi.core.score.max", 100);
-	oScorm.set("cmi.core.lesson_status", "passed");
+	if( score >= 80 )
+		oScorm.set("cmi.core.lesson_status", "passed");
+	else
+		oScorm.set("cmi.core.lesson_status", "failed");
+	
 	
 	oScorm.save();
-}
-
-function processQuiz()
-{
-	var score = 0;
-	
-	//calculate the final score from the quiz
-	
-	parent.reportScores( score);
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
@@ -149,4 +144,11 @@ function finishCourse()
 {
 	oScorm.save();
 	oScorm.quit();
+}
+
+
+function visitCertificate()
+{
+	var learner_name = oScorm.get( "cmi.core.student_name" );
+	document.getElementById( "contnet-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }

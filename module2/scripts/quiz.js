@@ -34,5 +34,15 @@ function processQuiz()
 	}
 	
 	var percentage = counter * 20;
-	alert( "Your score is " + percentage + "%" );
+	
+	if( percentage >= 80 )
+	{
+		alert( "Your score is " + percentage + "%. You Passed." );
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
+	}
+	else
+	{
+		alert( "Your score is " + percentage + "%. You Failed." );
+	}
+	parent.reportScores( percentage );
 }

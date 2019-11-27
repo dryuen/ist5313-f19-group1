@@ -55,7 +55,6 @@
 .nav a
 {
 	font-size: 12px;
-<<<<<<< HEAD
 	text-decoration: none;
 	font-family: Trebuchet MS;
 	color: #5e3d15;	
@@ -156,7 +155,7 @@ audio
 
 #quiz-link
 {
-	display: none;
+	/*display: none;*/
 }
 
 #certificate-link

@@ -130,7 +130,6 @@ function checkAllVisited()
 	if( t1 == "visited" && t2 == "visited" && t3 == "visited" && t4 == "visited" && t5 == "visited" && t6 == "visited" && t7 == "visited" )
 	{
 		//alert( t1 + ", " + t2 + "," + t3 + ", " + t4 + ", " + t5 + "," + t6 + ", " + t7 );
-	
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 	}
 }
@@ -140,20 +139,14 @@ function checkAllVisited()
 function reportScores( score )
 {	
 	oScorm.set("cmi.core.score.raw", score);
-	oScorm.set("cmi.core.score.min", 80);
+	oScorm.set("cmi.core.score.min", 0);
 	oScorm.set("cmi.core.score.max", 100);
-	oScorm.set("cmi.core.lesson_status", "passed");
+	if( score >= 80 )
+		oScorm.set("cmi.core.lesson_status", "passed");
+	else
+		oScorm.set("cmi.core.lesson_status", "failed");
 	
 	oScorm.save();
-}
-
-function processQuiz()
-{
-	var score = 0;
-	
-	//calculate the final score from the quiz
-	
-	parent.reportScores( score);
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
@@ -163,24 +156,8 @@ function finishCourse()
 	oScorm.quit();
 }
 
-
-var images= ["images/ilatte1.jpg", "images/ilatte2.jpg", "images/ilatte3.jpg"];
-var texts= ["This is a latte", "THis is a latte 2", "This is a latte 3"];
-var index = 0; 
-	$( document ).ready( function() {
-	slideshow();
-	} );
-
-// this function will start the slideshow
-function slideshow()
+function visitCertificate()
 {
-	$( ".slideshowimage" ).hide();
-	$( ".slideshowimage" ).eq( index ).show();
-	index = index + 1;
-	if( index == $( ".slideshowimage" ).length )
-{
-	index = 0;
-}
-// the initial time is 3 seconds (3000 milliseconds), but you can change this number
-setTimeout( slideshow, 3000 );		
+	var learner_name = oScorm.get( "cmi.core.student_name" );
+	document.getElementById( "contnet-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }
