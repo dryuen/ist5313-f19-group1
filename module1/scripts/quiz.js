@@ -39,5 +39,5 @@ function processQuiz()
 	}
 	//here is some extra content
 	
-	//parent.reportScores( percentage );
+	parent.reportScores( percentage );
 }

@@ -159,5 +159,5 @@ function finishCourse()
 function visitCertificate()
 {
 	var learner_name = oScorm.get( "cmi.core.student_name" );
-	document.getElementById( "contnet-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }

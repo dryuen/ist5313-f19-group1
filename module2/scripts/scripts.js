@@ -146,7 +146,7 @@ function reportScores( score )
 function visitCertificate()
 {
 	var learner_name = oScorm.get( "cmi.core.student_name" );
-	document.getElementById( "contnet-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
