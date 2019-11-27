@@ -31,7 +31,7 @@ function processQuiz()
 	if( percentage >= 80 )
 	{
 		alert( "Your score is " + percentage + "%. You Passed." );
-		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
+		document.getElementById( "certificate-link" ).style.display = "inline";
 	}
 	else
 	{
