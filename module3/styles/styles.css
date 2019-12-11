@@ -49,12 +49,13 @@
 {
 	width: 25%;
 	text-align: center;
+	font-family: Trebuchet MS;
+	font-size: 12px;
 }
 
 .nav a
 {
 	font-size: 12px;
-<<<<<<< HEAD
 	text-decoration: none;
 	font-family: Trebuchet MS;
 	color: #5e3d15;	
