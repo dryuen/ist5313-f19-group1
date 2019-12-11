@@ -50,6 +50,9 @@
 {
 	width: 25%;
 	text-align: center;
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	text-align: center;
 }
 
 .nav a
@@ -162,3 +165,4 @@ audio
 {
 	display: none;
 }
+
